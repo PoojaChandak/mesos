@@ -7,7 +7,7 @@ layout: documentation
 
 ## Prerequisites
 
-If you'd like to make significant contributions to Mesos, then you'll want to become familiar with the standard Mesos development workflow. In addition to the dependencies needed to build Mesos (detailed in [building](building.md)), a couple other things are necessary:
+If you'd like to make significant contributions to Mesos, then you'll want to become familiar with the standard Mesos development workflow. In addition to the dependencies needed to build Mesos (detailed in [building](building.md)), a couple of other things are necessary:
 
 * Required account authorizations
     + Apache Review Board Account
@@ -23,13 +23,13 @@ If you'd like to make significant contributions to Mesos, then you'll want to be
 
 * We use [Apache Review Board](https://reviews.apache.org) for code reviews.
 
-  **NOTE**: Apache Review Board currently does not allow creation of new accounts. We are aware of this and are looking into possible solutions;
+  **NOTE**: Apache Review Board currently does not allow the creation of new accounts. We are aware of this and are looking into possible solutions;
   in the meantime please coordinate with your shepherd on how to best transmit your patches.
 
     * A code review request should be created for every JIRA that involves a change to the codebase.
 * Once your JIRA and Review Board accounts are in place please go ahead and create a review or GitHub pull request with an entry for yourself in [contributors.yaml](https://github.com/apache/mesos/blob/master/docs/contributors.yaml) file.
     * The file is used to map contributions to the JIRA and Review Board accounts of their respective authors. We also use this mapping to track contributions of various organizations to Apache Mesos.
-    * Feel free to omit the `affiliations` field out in case you do not want your contribution to be atributed to a particular organization.
+    * Feel free to omit the `affiliations` field out in case you do not want your contribution to be attributed to a particular organization.
     * In the `email` field please specify the email that your local git client is setup with.
 * Joining the following mailing lists will help you stay up-to-date on Mesos development:
     * Developer list: [dev-subscribe@mesos.apache.org](mailto:dev-subscribe@mesos.apache.org)
@@ -100,7 +100,7 @@ Here is the standard procedure for proposing and making changes to Mesos:
     5. Log into Review Board from the command line: run `rbt status`.
     6. From your local branch run `support/post-reviews.py`.
     7. Note that `post-reviews.py` creates a new review for every commit on your branch that is different from the `master`.
-    8. Be sure to add your JIRA issue id (e.g. MESOS-1) to the field labeled "Bugs" (this will automatically link).
+    8. Be sure to add your JIRA issue id (e.g. MESOS-1) to the field labelled "Bugs" (this will automatically link).
     9. Add your shepherd under the "People" field, in the "Reviewers" section. You should also include other Mesos community members who have contributed to the discussion of your proposed change.
     10. Under "Description" in addition to details about your changes, include a description of any documentation pages that need to be added, or are affected by your changes (e.g. did you change or add any configuration options/flags? Did you add a new binary?)
     11. Under "Testing Done", explain what new tests you have created, what tests were modified, and what procedures you went through to test your changes.
